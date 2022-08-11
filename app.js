@@ -44,14 +44,16 @@ teamTwoAddButton.addEventListener('click', () => {
 });
 
 teamOneSubtractButton.addEventListener('click', () => {
-    score1--;
-
+    if (score1 > 0) {
+        score1--;
+    }
     displayCurrentGameEl();
 });
 
 teamTwoSubtractButton.addEventListener('click', () => {
-    score2--;
-
+    if (score2 > 0) {
+        score2--;
+    }
     displayCurrentGameEl();
 });
 
@@ -65,6 +67,8 @@ finishGameButton.addEventListener('click', async () => {
     };
 
     await createGame(currentGame);
+
+    currentGameEl.textContent = '';
 
     pastGamesEl.textContent = '';
 
