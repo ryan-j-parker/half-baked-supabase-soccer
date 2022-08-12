@@ -73,6 +73,14 @@ header img {
     height: var(--header-height);
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
 p {
     margin: var(--gutter);
 }
@@ -94,12 +102,14 @@ p {
 }
 
 .game {
-    border: solid 1px black;
+    border: solid 2px black;
     text-align: center;
     display: flex;
     width: 200px;
     display: flex;
     justify-content: center;
+    padding: 20px;
+    font-weight: 600;
 }
 
 .team {
@@ -111,6 +121,14 @@ p {
     font-size: 1.3rem;
     border-bottom: solid 2px black;
     text-overflow: ellipsis;
+}
+
+.current-game {
+    font-weight: 600;
+}
+
+.name {
+    margin: 10px;
 }
 
 .game .score {
