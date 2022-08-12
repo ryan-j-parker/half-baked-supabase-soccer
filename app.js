@@ -116,3 +116,4 @@ async function displayAllGames() {
 }
 
 displayCurrentGameEl();
+displayAllGames();
